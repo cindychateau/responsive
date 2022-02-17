@@ -1,0 +1,33 @@
+.row:after{
+    clear: both;
+    content: "";
+}
+
+.columna {
+    float: left;
+    width: 25%;
+    background-color: blueviolet;
+}
+
+h2 {
+    font-size: 1.5em; /*Unidad de tamaño en base al navegador*/
+}
+
+/*Pantalla máxima de 992*/
+@media screen and (max-width: 992px) {
+    .columna {
+        width: 50%;
+    }
+}
+
+/*Pantalla máxima de 480*/
+@media screen  and (max-width: 480px){
+    .columna {
+        width: 100%;
+        background-color: blue;
+    }
+
+    h2 {
+        color: white;
+    }
+}
